@@ -7,9 +7,6 @@
   <title>Bob de Ruiter en zijn portfolio</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -84,9 +84,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -151,22 +152,22 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
-<style>img {max-width: 500px; border: 1px solid black; margin: 0 auto; display: block;} hr, body {margin-top: 0; padding-top: 0}
+<style>img {max-width: min(500px, 100%); border: 1px solid black; margin: 0 auto; display: block;} hr, body {margin-top: 0; padding-top: 0}
 body {padding-bottom: 15px;}
-.humanchessgraphic { max-width: 400px;}
+.humanchessgraphic {max-width: 400px; max-width: min(400px, 100%);}
 <!-- .border {border: 1px solid black;} -->
 h2, h3 {text-align: center;}
 h3 a, kbd a {text-decoration: none; color: inherit;}</style>
@@ -175,7 +176,7 @@ id="bob-de-ruiter-is-schrijver-tekenaar-theatermaker-en-kaartenmaker.">Bob
 de Ruiter is schrijver, tekenaar, theatermaker en kaartenmaker.</h2>
 <hr>
 <h3 id="de-hendelhengelaar-2022">De Hendelhengelaar (2022)</h3>
-<p><kbd><img src="images/hendelhengelaar.jpg" /></kbd></p>
+<p><img src="images/hendelhengelaar.jpg" /></p>
 <p>Een theaterstuk dat zich volledig in het <a
 href="https://nl.wikipedia.org/wiki/Trolleyprobleem"
 target="_blank">trolleyprobleem</a> afspeelt. Tweemaal vertoond: eenmaal
@@ -184,10 +185,10 @@ Introfestival van de Radboud Universiteit. <em>Scenario +
 regie.</em></p>
 <h3 id="human-chess-2022"><a href="https://humanchess.abcd.party"
 target="_blank">Human Chess (2022)</a></h3>
-<p><kbd><a href='https://humanchess.abcd.party' target="_blank"><img class=humanchessgraphic src="images/humanchessgraphic.png" /></a></kbd></p>
+<p><a href='https://humanchess.abcd.party' target="_blank"><img class=humanchessgraphic src="images/humanchessgraphic.png" /></a></p>
 <p>Een absurde schaakvariant die wereldwijd veel werd besproken. De <a
 href="https://humanchess.abcd.party" target="_blank">regels</a> zijn
-inmiddels door meer dan 80.000 mensen gezien. Een reactie:</p>
+inmiddels door meer dan 120.000 mensen gezien. Een reactie:</p>
 <blockquote>
 <p>Mooi commentaar over het verlies van de menselijke identiteit door de
 opkomst van AI.</p>
@@ -202,22 +203,22 @@ encoded in the rules of the game itself.</p>
 </blockquote>
 <h3 id="hitchmap-2022-tot-heden"><a href="https://hitchmap.com"
 target="_blank">Hitchmap (2022 tot heden)</a></h3>
-<p><kbd><a href=https://hitchmap.com target="_blank"><img src="images/hitchmap.png" /></a></kbd></p>
+<p><a href=https://hitchmap.com target="_blank"><img src="images/hitchmap.png" /></a></p>
 <p>Een digitale wereldkaart waarop lifters elkaar kunnen laten weten
 waar makkelijk naar andere steden gelift kan worden. Ontvangt jaarlijks
 5000 nieuwe recensies. Heeft bijgedragen aan miljoenen kilometers
 CO2-neutraal reizen, aangezien lifters zitplekken innemen die anders
 leeg blijven.</p>
 <h3 id="david-meijers-2024">David Meijers (2024)</h3>
-<p><kbd><img src="images/davidmeijers.jpg" /></kbd></p>
+<p><img src="images/davidmeijers.jpg" /></p>
 <p>Een interactieve whodunit waarin bezoekers door met acteurs te praten
 erachter proberen te komen wie lijsttrekker David Meijers vermoord
 heeft. <em>Scenario + acteur.</em></p>
 <h3 id="tinyworldmap-2024"><a href="https://tinyworldmap.com"
 target="_blank">tinyworldmap (2024)</a></h3>
-<p><kbd><a href=https://tinyworldmap.com target="_blank"><img class=border src="images/tinyworldmap.png" /></a></kbd></p>
+<p><a href=https://tinyworldmap.com target="_blank"><img class=border src="images/tinyworldmap.png" /></a></p>
 <p>Een digitale wereldkaart, ontworpen met het oog op eenvoud. Wordt
-door honderden websites gebruikt vanwege de geringe bestandsgrootte.</p>
+gebruikt vanwege de geringe bestandsgrootte.</p>
 <p><br><br><br></p>
 <p><small><a href=mailto:bob@abcd.party>Contact</a></small></p>
 </body>
